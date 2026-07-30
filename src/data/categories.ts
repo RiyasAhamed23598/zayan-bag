@@ -1,0 +1,88 @@
+import type { ProductCategory } from '../types';
+
+export const productCategories: ProductCategory[] = [
+  {
+    id: 'school-bags',
+    nameKey: 'products.categories.schoolBags',
+    descriptionKey: 'products.categoryDescriptions.schoolBags',
+    image: './images/backpacks_collection.jpg',
+    icon: 'GraduationCap',
+  },
+  {
+    id: 'college-bags',
+    nameKey: 'products.categories.collegeBags',
+    descriptionKey: 'products.categoryDescriptions.collegeBags',
+    image: './images/backpacks_collection.jpg',
+    icon: 'BookOpen',
+  },
+  {
+    id: 'office-bags',
+    nameKey: 'products.categories.officeBags',
+    descriptionKey: 'products.categoryDescriptions.officeBags',
+    image: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=600&q=80',
+    icon: 'Briefcase',
+  },
+  {
+    id: 'laptop-bags',
+    nameKey: 'products.categories.laptopBags',
+    descriptionKey: 'products.categoryDescriptions.laptopBags',
+    image: 'https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?w=600&q=80',
+    icon: 'Laptop',
+  },
+  {
+    id: 'backpacks',
+    nameKey: 'products.categories.backpacks',
+    descriptionKey: 'products.categoryDescriptions.backpacks',
+    image: './images/backpacks_collection.jpg',
+    icon: 'Backpack',
+  },
+  {
+    id: 'travel-bags',
+    nameKey: 'products.categories.travelBags',
+    descriptionKey: 'products.categoryDescriptions.travelBags',
+    image: './images/trolley_bags_collection.jpg',
+    icon: 'Plane',
+  },
+  {
+    id: 'trolley-bags',
+    nameKey: 'products.categories.trolleyBags',
+    descriptionKey: 'products.categoryDescriptions.trolleyBags',
+    image: './images/trolley_bags_collection.jpg',
+    icon: 'Luggage',
+  },
+  {
+    id: 'suitcases',
+    nameKey: 'products.categories.suitcases',
+    descriptionKey: 'products.categoryDescriptions.suitcases',
+    image: './images/trolley_bags_collection.jpg',
+    icon: 'Box',
+  },
+  {
+    id: 'duffel-bags',
+    nameKey: 'products.categories.duffelBags',
+    descriptionKey: 'products.categoryDescriptions.duffelBags',
+    image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&q=80',
+    icon: 'Package',
+  },
+  {
+    id: 'kids-bags',
+    nameKey: 'products.categories.kidsBags',
+    descriptionKey: 'products.categoryDescriptions.kidsBags',
+    image: './images/backpacks_collection.jpg',
+    icon: 'Baby',
+  },
+  {
+    id: 'hand-bags',
+    nameKey: 'products.categories.handBags',
+    descriptionKey: 'products.categoryDescriptions.handBags',
+    image: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=600&q=80',
+    icon: 'ShoppingBag',
+  },
+  {
+    id: 'travel-accessories',
+    nameKey: 'products.categories.travelAccessories',
+    descriptionKey: 'products.categoryDescriptions.travelAccessories',
+    image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&q=80',
+    icon: 'Tag',
+  },
+];

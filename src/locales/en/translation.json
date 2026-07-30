@@ -1,0 +1,194 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "repairServices": "Repair Services",
+    "about": "About",
+    "gallery": "Gallery",
+    "reviews": "Reviews",
+    "location": "Location",
+    "contact": "Contact",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "heading": "Expert Trolley & Suitcase Repair in Madurai",
+    "description": "Madurai's No. 1 trusted specialist for professional suitcase, trolley bag, and all types of luggage repairs. Fast service, quality spare parts, and premium new bags.",
+    "exploreProducts": "Shop New Bags",
+    "whatsappNow": "WhatsApp Enquiry",
+    "getDirections": "Get Directions"
+  },
+  "products": {
+    "heading": "Our Product Categories",
+    "subheading": "Find the perfect bag for every occasion",
+    "viewProducts": "View Products",
+    "featured": "Featured Products",
+    "featuredSubheading": "Handpicked quality bags for you",
+    "enquireNow": "Enquire on WhatsApp",
+    "available": "Available",
+    "categories": {
+      "schoolBags": "School Bags",
+      "collegeBags": "College Bags",
+      "officeBags": "Office Bags",
+      "laptopBags": "Laptop Bags",
+      "backpacks": "Backpacks",
+      "travelBags": "Travel Bags",
+      "trolleyBags": "Trolley Bags",
+      "suitcases": "Suitcases",
+      "duffelBags": "Duffel Bags",
+      "kidsBags": "Kids Bags",
+      "handBags": "Hand Bags",
+      "travelAccessories": "Travel Accessories"
+    },
+    "categoryDescriptions": {
+      "schoolBags": "Durable and stylish school bags for students of all ages.",
+      "collegeBags": "Trendy and spacious bags perfect for college students.",
+      "officeBags": "Professional office bags for the modern workplace.",
+      "laptopBags": "Secure and padded laptop bags for safe carrying.",
+      "backpacks": "Versatile backpacks for travel, work and everyday use.",
+      "travelBags": "Reliable travel bags for short trips and long journeys.",
+      "trolleyBags": "Smooth-rolling trolley bags for easy travel.",
+      "suitcases": "Premium suitcases with durable build quality.",
+      "duffelBags": "Spacious duffel bags for gym, sports and travel.",
+      "kidsBags": "Fun and colourful bags designed for children.",
+      "handBags": "Elegant handbags for daily use and special occasions.",
+      "travelAccessories": "Essential travel accessories for smart packing."
+    },
+    "featuredProducts": {
+      "premiumTrolley": "Premium Travel Trolley",
+      "premiumTrolleyDesc": "Hard-shell trolley bag with 360° spinner wheels and TSA lock.",
+      "lightweightSuitcase": "Lightweight Suitcase",
+      "lightweightSuitcaseDesc": "Ultra-light suitcase with expandable compartment and smooth wheels.",
+      "schoolBackpack": "School Backpack",
+      "schoolBackpackDesc": "Spacious backpack with ergonomic design and multiple pockets.",
+      "laptopOfficeBag": "Laptop Office Bag",
+      "laptopOfficeBagDesc": "Water-resistant laptop bag with padded compartment and organiser.",
+      "kidsPrintedBag": "Kids Printed Bag",
+      "kidsPrintedBagDesc": "Fun cartoon-printed bag with lightweight and comfortable straps.",
+      "largeDuffel": "Large Travel Duffel Bag",
+      "largeDuffelDesc": "Extra-large duffel bag with shoe compartment and shoulder strap."
+    }
+  },
+  "repair": {
+    "heading": "Professional Repair Services",
+    "subheading": "Expert bag, trolley bag and suitcase repair at affordable prices",
+    "enquireNow": "Enquire Now",
+    "beforeAfterHeading": "Professional Bag and Suitcase Repair",
+    "beforeAfterSubheading": "See the quality of our repair work",
+    "before": "Before",
+    "after": "After",
+    "services": {
+      "wheelReplacement": "Trolley Wheel Replacement",
+      "handleReplacement": "Trolley Handle Replacement",
+      "zipRepair": "Zip Repair and Replacement",
+      "lockRepair": "Lock Repair",
+      "bagStitching": "Bag Stitching",
+      "bodyRepair": "Suitcase Body Repair",
+      "accessoriesReplacement": "Luggage Accessories Replacement",
+      "cleaningMaintenance": "Bag Cleaning and Maintenance"
+    },
+    "serviceDescriptions": {
+      "wheelReplacement": "Replace broken or worn-out trolley wheels with high-quality replacements.",
+      "handleReplacement": "Fix or replace telescopic and carry handles on trolley bags.",
+      "zipRepair": "Repair stuck, broken or missing zips on bags and suitcases.",
+      "lockRepair": "Fix combination locks, key locks and TSA-approved locks.",
+      "bagStitching": "Resew torn seams, straps and fabric on all bag types.",
+      "bodyRepair": "Repair dents, cracks and damage on hard-shell suitcases.",
+      "accessoriesReplacement": "Replace buckles, clasps, name tags and other accessories.",
+      "cleaningMaintenance": "Deep cleaning and conditioning for all bag materials."
+    }
+  },
+  "whyChoose": {
+    "heading": "Why Choose Zayan Bag",
+    "subheading": "Your trusted bag shop in Madurai",
+    "wideRange": "Wide Range of Bags",
+    "wideRangeDesc": "From school bags to premium suitcases, find everything under one roof.",
+    "quality": "Quality Products",
+    "qualityDesc": "We stock only reliable and durable bags from trusted brands.",
+    "affordable": "Affordable Prices",
+    "affordableDesc": "Get the best value for your money with competitive pricing.",
+    "experienced": "Experienced Repair Service",
+    "experiencedDesc": "Years of expertise in repairing all types of bags and suitcases.",
+    "quickSupport": "Quick Customer Support",
+    "quickSupportDesc": "Fast response via WhatsApp, phone or walk-in visit.",
+    "convenient": "Convenient Madurai Location",
+    "convenientDesc": "Located near Periyar Bus Stand and Koodal Azhagar Temple.",
+    "trusted": "Trusted Local Shop",
+    "trustedDesc": "A reliable neighbourhood bag shop trusted by Madurai families."
+  },
+  "gallery": {
+    "heading": "Our Gallery",
+    "subheading": "Browse our collection and shop photos",
+    "all": "All",
+    "trolleyBags": "Trolley Bags",
+    "suitcases": "Suitcases",
+    "schoolBags": "School Bags",
+    "backpacks": "Backpacks",
+    "shopInterior": "Shop Interior",
+    "repairWork": "Repair Work"
+  },
+  "reviews": {
+    "heading": "Customer Reviews",
+    "subheading": "What our customers say about us",
+    "sampleNote": "Sample reviews for demonstration. Replace with actual customer reviews."
+  },
+  "location": {
+    "heading": "Find Us",
+    "subheading": "Visit our shop in Madurai",
+    "getDirections": "Get Directions",
+    "copyAddress": "Copy Address",
+    "copied": "Address Copied!",
+    "nearbyLandmarks": "Nearby Landmarks",
+    "landmark1": "Near Koodal Azhagar Temple",
+    "landmark2": "Near Periyar Bus Stand"
+  },
+  "contact": {
+    "heading": "Contact Us",
+    "subheading": "Get in touch with Zayan Bag",
+    "phone": "Phone",
+    "whatsapp": "WhatsApp",
+    "address": "Address",
+    "businessHours": "Business Hours",
+    "weekdays": "Monday – Saturday",
+    "sunday": "Sunday",
+    "callNow": "Call Now",
+    "whatsappNow": "WhatsApp Now",
+    "directions": "Directions"
+  },
+  "faq": {
+    "heading": "Frequently Asked Questions",
+    "subheading": "Answers to common questions",
+    "q1": "What types of bags do you sell?",
+    "a1": "We sell a wide range of bags including school bags, college bags, office bags, laptop bags, backpacks, travel bags, trolley bags, suitcases, duffel bags, kids bags, hand bags and travel accessories.",
+    "q2": "Do you offer suitcase repair services?",
+    "a2": "Yes, we provide professional repair services for suitcases, trolley bags and all types of bags. Our services include wheel replacement, handle repair, zip repair, lock repair and more.",
+    "q3": "Can you replace trolley bag wheels?",
+    "a3": "Yes, we replace all types of trolley bag wheels with high-quality replacements. We carry wheels of various sizes and types to match your trolley bag.",
+    "q4": "How long does a typical repair take?",
+    "a4": "Most repairs are completed within 1-2 days. Simple repairs like zip fixes may be done the same day. Complex repairs may take 2-3 days.",
+    "q5": "Where is your shop located?",
+    "a5": "We are located at 50, West Vadampokki Street, near Koodal Azhagar Temple and Periyar Bus Stand in Madurai.",
+    "q6": "Can I enquire through WhatsApp?",
+    "a6": "Yes! You can message us on WhatsApp for product enquiries, repair quotes and any other questions. Click the WhatsApp button on our website to start a chat.",
+    "q7": "What are your business hours?",
+    "a7": "We are open Monday to Saturday from 9:00 AM to 9:00 PM. Sunday hours may vary, please call or WhatsApp to confirm."
+  },
+  "footer": {
+    "description": "Your trusted bag shop in Madurai. Quality bags, trolley bags, suitcases and professional repair services.",
+    "quickLinks": "Quick Links",
+    "productCategories": "Product Categories",
+    "repairServices": "Repair Services",
+    "contactInfo": "Contact Info",
+    "copyright": "© 2024 Zayan Bag. All rights reserved.",
+    "privacyPolicy": "Privacy Policy"
+  },
+  "mobile": {
+    "callNow": "Call Now",
+    "whatsapp": "WhatsApp",
+    "directions": "Directions"
+  },
+  "privacy": {
+    "heading": "Privacy Policy",
+    "lastUpdated": "Last Updated",
+    "content": "This is a placeholder privacy policy. The business owner should replace this with an actual privacy policy that complies with applicable laws."
+  }
+}
