@@ -9,21 +9,22 @@ const Footer = () => {
   const { t, i18n } = useTranslation();
 
   return (
-    <footer className="bg-gray-950 text-gray-400">
+    <footer className="maroon-kolam text-amber-50/70">
+      <div className="temple-band" />
       {/* Upper Footer */}
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-5">
           {/* Col 1: About & Brand */}
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center gap-2.5 mb-6">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-blue-600 to-indigo-700 shadow-lg shadow-blue-500/25">
-                <Luggage className="h-5 w-5 text-white" />
+              <div className="flex h-11 w-11 items-center justify-center rounded-full bg-blue-950 ring-2 ring-amber-500">
+                <Luggage className="h-5 w-5 text-amber-300" />
               </div>
-              <span className="text-xl font-bold tracking-tight text-white">
+              <span className="font-serif text-2xl font-bold text-amber-200">
                 Zayan Bag
               </span>
             </Link>
-            <p className="max-w-md text-sm leading-relaxed text-gray-400">
+            <p className="max-w-md text-sm leading-relaxed text-amber-50/70">
               {t('footer.description')}
             </p>
             {/* Social Icons */}
@@ -32,7 +33,7 @@ const Footer = () => {
                 href={BUSINESS_CONFIG.social.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-10 w-10 items-center justify-center rounded-xl bg-gray-900 text-gray-400 transition-colors hover:bg-blue-600 hover:text-white"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-amber-400/40 bg-black/20 text-amber-200 transition-colors hover:bg-blue-600 hover:text-white"
                 aria-label="Facebook"
               >
                 <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -43,7 +44,7 @@ const Footer = () => {
                 href={BUSINESS_CONFIG.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-10 w-10 items-center justify-center rounded-xl bg-gray-900 text-gray-400 transition-colors hover:bg-pink-600 hover:text-white"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-amber-400/40 bg-black/20 text-amber-200 transition-colors hover:bg-pink-600 hover:text-white"
                 aria-label="Instagram"
               >
                 <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -56,7 +57,7 @@ const Footer = () => {
                 href={BUSINESS_CONFIG.social.youtube}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-10 w-10 items-center justify-center rounded-xl bg-gray-900 text-gray-400 transition-colors hover:bg-red-600 hover:text-white"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-amber-400/40 bg-black/20 text-amber-200 transition-colors hover:bg-red-600 hover:text-white"
                 aria-label="Youtube"
               >
                 <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -69,68 +70,68 @@ const Footer = () => {
 
           {/* Col 2: Quick Links */}
           <div>
-            <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider text-white">
+            <h3 className="mb-6 border-b border-amber-500/30 pb-3 font-serif text-lg font-semibold text-amber-200">
               {t('footer.quickLinks')}
             </h3>
             <ul className="space-y-3.5 text-sm">
               <li>
-                <Link to="/" className="hover:text-white transition-colors">{t('nav.home')}</Link>
+                <Link to="/" className="hover:text-amber-300 transition-colors">{t('nav.home')}</Link>
               </li>
               <li>
-                <Link to="/products" className="hover:text-white transition-colors">{t('nav.products')}</Link>
+                <Link to="/products" className="hover:text-amber-300 transition-colors">{t('nav.products')}</Link>
               </li>
               <li>
-                <Link to="/repair-services" className="hover:text-white transition-colors">{t('nav.repairServices')}</Link>
+                <Link to="/repair-services" className="hover:text-amber-300 transition-colors">{t('nav.repairServices')}</Link>
               </li>
               <li>
-                <Link to="/gallery" className="hover:text-white transition-colors">{t('nav.gallery')}</Link>
+                <Link to="/gallery" className="hover:text-amber-300 transition-colors">{t('nav.gallery')}</Link>
               </li>
               <li>
-                <Link to="/contact" className="hover:text-white transition-colors">{t('nav.contact')}</Link>
+                <Link to="/contact" className="hover:text-amber-300 transition-colors">{t('nav.contact')}</Link>
               </li>
               <li>
-                <Link to="/privacy-policy" className="hover:text-white transition-colors">{t('footer.privacyPolicy')}</Link>
+                <Link to="/privacy-policy" className="hover:text-amber-300 transition-colors">{t('footer.privacyPolicy')}</Link>
               </li>
             </ul>
           </div>
 
           {/* Col 3: Categories */}
           <div>
-            <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider text-white">
+            <h3 className="mb-6 border-b border-amber-500/30 pb-3 font-serif text-lg font-semibold text-amber-200">
               {t('footer.productCategories')}
             </h3>
             <ul className="space-y-3.5 text-sm">
               <li>
-                <Link to="/products" className="hover:text-white transition-colors">{t('products.categories.schoolBags')}</Link>
+                <Link to="/products" className="hover:text-amber-300 transition-colors">{t('products.categories.schoolBags')}</Link>
               </li>
               <li>
-                <Link to="/products" className="hover:text-white transition-colors">{t('products.categories.trolleyBags')}</Link>
+                <Link to="/products" className="hover:text-amber-300 transition-colors">{t('products.categories.trolleyBags')}</Link>
               </li>
               <li>
-                <Link to="/products" className="hover:text-white transition-colors">{t('products.categories.suitcases')}</Link>
+                <Link to="/products" className="hover:text-amber-300 transition-colors">{t('products.categories.suitcases')}</Link>
               </li>
               <li>
-                <Link to="/products" className="hover:text-white transition-colors">{t('products.categories.backpacks')}</Link>
+                <Link to="/products" className="hover:text-amber-300 transition-colors">{t('products.categories.backpacks')}</Link>
               </li>
               <li>
-                <Link to="/products" className="hover:text-white transition-colors">{t('products.categories.handBags')}</Link>
+                <Link to="/products" className="hover:text-amber-300 transition-colors">{t('products.categories.handBags')}</Link>
               </li>
             </ul>
           </div>
 
           {/* Col 4: Contact Info */}
           <div>
-            <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider text-white">
+            <h3 className="mb-6 border-b border-amber-500/30 pb-3 font-serif text-lg font-semibold text-amber-200">
               {t('footer.contactInfo')}
             </h3>
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3">
-                <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-blue-500" />
+                <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-amber-400" />
                 <span className="leading-relaxed">{BUSINESS_CONFIG.address.full}</span>
               </li>
               <li>
-                <a href={`tel:${BUSINESS_CONFIG.phone}`} className="flex items-center gap-3 hover:text-white transition-colors">
-                  <Phone className="h-5 w-5 text-blue-500" />
+                <a href={`tel:${BUSINESS_CONFIG.phone}`} className="flex items-center gap-3 hover:text-amber-300 transition-colors">
+                  <Phone className="h-5 w-5 text-amber-400" />
                   <span>{BUSINESS_CONFIG.phone}</span>
                 </a>
               </li>
@@ -139,7 +140,7 @@ const Footer = () => {
                   href={getWhatsAppUrl(i18n.language)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 hover:text-white transition-colors"
+                  className="flex items-center gap-3 hover:text-amber-300 transition-colors"
                 >
                   <MessageCircle className="h-5 w-5 text-green-500" />
                   <span>{t('contact.whatsappNow')}</span>
@@ -151,7 +152,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Footer */}
-      <div className="border-t border-gray-900 bg-gray-950 px-4 py-8 text-center text-xs sm:px-6 lg:px-8">
+      <div className="border-t border-amber-500/30 bg-black/30 px-4 py-8 text-center text-xs sm:px-6 lg:px-8">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 sm:flex-row">
           <p>{t('footer.copyright')}</p>
           <div className="flex items-center gap-4">

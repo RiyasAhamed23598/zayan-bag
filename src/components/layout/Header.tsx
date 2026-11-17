@@ -50,6 +50,7 @@ const Header = () => {
 
   const isHashLink = (href: string) => href.includes('#');
   const isActive = (href: string) => {
+    if (href.includes('#')) return false;
     if (href === '/') return location.pathname === '/';
     return location.pathname.startsWith(href.split('#')[0]) || location.pathname === href;
   };
@@ -58,19 +59,23 @@ const Header = () => {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-white/90 shadow-lg shadow-black/5 backdrop-blur-xl'
-          : 'bg-transparent'
+          ? 'bg-[#fbf6ec]/95 shadow-lg shadow-black/10 backdrop-blur-xl'
+          : 'bg-[#fbf6ec]/90 backdrop-blur-md'
       }`}
     >
+      <div className="temple-band !h-2.5 !bg-[length:10px_10px]" />
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2.5" onClick={() => setIsOpen(false)}>
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-blue-600 to-indigo-700 shadow-lg shadow-blue-500/25">
-            <Luggage className="h-5 w-5 text-white" />
+          <div className="flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br from-blue-700 to-blue-900 shadow-md ring-2 ring-amber-500 ring-offset-2 ring-offset-[#fbf6ec]">
+            <Luggage className="h-5 w-5 text-amber-300" />
           </div>
-          <div>
-            <span className="bg-gradient-to-r from-blue-700 to-indigo-600 bg-clip-text text-xl font-bold tracking-tight text-transparent">
+          <div className="leading-none">
+            <span className="block font-serif text-2xl font-bold text-blue-900">
               Zayan Bag
+            </span>
+            <span className="mt-0.5 block text-[10px] font-semibold uppercase tracking-[0.3em] text-amber-600">
+              Madurai
             </span>
           </div>
         </Link>
@@ -83,10 +88,10 @@ const Header = () => {
                 key={item.key}
                 to={item.href}
                 onClick={() => handleNavClick(item.href)}
-                className={`rounded-lg px-3 py-2 text-sm font-medium transition-all duration-200 ${
+                className={`rounded-full px-3 py-2 text-sm font-semibold transition-all duration-200 ${
                   isActive(item.href)
-                    ? 'bg-blue-50 text-blue-600'
-                    : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'
+                    ? 'bg-blue-900 text-amber-200'
+                    : 'text-gray-700 hover:bg-amber-100 hover:text-blue-900'
                 }`}
               >
                 {t(item.key)}
@@ -95,10 +100,10 @@ const Header = () => {
               <Link
                 key={item.key}
                 to={item.href}
-                className={`rounded-lg px-3 py-2 text-sm font-medium transition-all duration-200 ${
+                className={`rounded-full px-3 py-2 text-sm font-semibold transition-all duration-200 ${
                   isActive(item.href)
-                    ? 'bg-blue-50 text-blue-600'
-                    : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'
+                    ? 'bg-blue-900 text-amber-200'
+                    : 'text-gray-700 hover:bg-amber-100 hover:text-blue-900'
                 }`}
               >
                 {t(item.key)}
@@ -143,7 +148,7 @@ const Header = () => {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
-            className="overflow-hidden border-t border-gray-100 bg-white lg:hidden"
+            className="overflow-hidden border-t-2 border-amber-500/60 bg-[#fbf6ec] lg:hidden"
           >
             <nav className="mx-auto max-w-7xl space-y-1 px-4 py-4">
               {navItems.map((item, i) => (
@@ -158,8 +163,8 @@ const Header = () => {
                     onClick={() => handleNavClick(item.href)}
                     className={`block rounded-xl px-4 py-3 text-base font-medium transition-colors ${
                       isActive(item.href)
-                        ? 'bg-blue-50 text-blue-600'
-                        : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
+                        ? 'bg-blue-900 text-amber-200'
+                        : 'text-gray-700 hover:bg-amber-50 hover:text-blue-900'
                     }`}
                   >
                     {t(item.key)}

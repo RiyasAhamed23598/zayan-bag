@@ -1,4 +1,5 @@
 import React from 'react';
+import Ornament from './Ornament';
 
 interface SectionHeadingProps {
   title?: string;
@@ -27,12 +28,15 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({
   return (
     <div className={`mb-10 ${centered ? 'text-center' : ''} ${className}`}>
       {mainTitle && (
-        <h2 className={`text-3xl font-bold tracking-tight sm:text-4xl ${light ? 'text-white' : 'text-gray-900'}`}>
-          {mainTitle}
-        </h2>
+        <>
+          <Ornament light={light} className={`mb-4 ${centered ? '' : 'justify-start'}`} />
+          <h2 className={`font-serif text-3xl font-bold sm:text-4xl lg:text-5xl ${light ? 'text-amber-200' : 'text-blue-900'}`}>
+            {mainTitle}
+          </h2>
+        </>
       )}
       {subText && (
-        <p className={`mt-3 text-base sm:text-lg max-w-2xl mx-auto ${light ? 'text-gray-300' : 'text-gray-600'}`}>
+        <p className={`mt-4 text-base italic sm:text-lg max-w-2xl mx-auto ${light ? 'text-amber-50/80' : 'text-gray-600'}`}>
           {subText}
         </p>
       )}

@@ -32,7 +32,7 @@ const WhyChooseSection = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="bg-slate-900 bg-gradient-to-br from-slate-900 to-slate-800 py-16 text-white" id="why-choose-us">
+    <section className="relative maroon-kolam py-20 text-white" id="why-choose-us">
       <div className="container mx-auto px-4">
         <SectionHeading 
           title={t('whyChoose.heading')} 
@@ -52,10 +52,10 @@ const WhyChooseSection = () => {
             return (
               <motion.div 
                 key={index} 
-                className="flex flex-col items-center text-center p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors"
+                className="flex flex-col items-center text-center p-6 rounded-2xl bg-white/5 border border-amber-400/25 hover:border-amber-400/60 hover:bg-white/10 transition-colors"
                 variants={itemVariants}
               >
-                <div className="w-14 h-14 rounded-full bg-amber-500/20 flex items-center justify-center mb-4 text-amber-400">
+                <div className="w-14 h-14 rounded-full bg-amber-500/15 ring-1 ring-amber-400/50 flex items-center justify-center mb-4 text-amber-400">
                   <Icon size={28} />
                 </div>
                 <h3 className="text-lg font-bold text-white mb-2">{t(feature.titleKey)}</h3>
