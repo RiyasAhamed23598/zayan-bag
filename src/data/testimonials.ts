@@ -15,7 +15,7 @@ export const testimonials: Testimonial[] = [
     name: 'Priya Sundaram',
     rating: 5,
     reviewKey: 'Got my suitcase wheels replaced here. Quick service and reasonable rates. The wheels are smooth and work perfectly now.',
-    location: 'Periyar, Madurai',
+    location: 'Tirupparankunram, Madurai',
   },
   {
     id: '3',
@@ -29,13 +29,13 @@ export const testimonials: Testimonial[] = [
     name: 'Lakshmi Devi',
     rating: 5,
     reviewKey: 'I have been buying bags from Zayan Bag for years. They always have quality products and the owner is very trustworthy. Highly recommended.',
-    location: 'Madurai Main',
+    location: 'Agrini Township, Madurai',
   },
   {
     id: '5',
     name: 'Suresh Babu',
     rating: 4,
-    reviewKey: 'My old trolley bag zip was broken. They repaired it same day. Good repair work at fair prices. The shop is easy to find near Periyar Bus Stand.',
+    reviewKey: 'My old trolley bag zip was broken. They repaired it same day. Good repair work at fair prices. The shop is easy to find on Tirupparankunram Road.',
     location: 'Madurai',
   },
   {

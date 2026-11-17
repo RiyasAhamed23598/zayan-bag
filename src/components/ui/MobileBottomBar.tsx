@@ -7,7 +7,7 @@ const MobileBottomBar = () => {
   const { t, i18n } = useTranslation();
 
   return (
-    <div className="fixed inset-x-0 bottom-0 z-50 border-t border-gray-800 bg-gray-900/95 backdrop-blur-lg md:hidden">
+    <div className="fixed inset-x-0 bottom-0 z-50 border-t-2 border-amber-500 bg-blue-900/95 backdrop-blur-lg md:hidden">
       <div className="flex items-center justify-around py-2 pb-[env(safe-area-inset-bottom)]">
         <a
           href={`tel:${BUSINESS_CONFIG.phone}`}

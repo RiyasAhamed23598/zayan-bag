@@ -1,13 +1,66 @@
 @import 'tailwindcss';
 
 @theme {
-  --color-primary: #0f172a;
-  --color-secondary: #2563eb;
-  --color-accent: #d97706;
-  --color-background: #f8fafc;
-  --color-text: #334155;
-  --color-glass: rgba(255, 255, 255, 0.7);
-  --color-glass-border: rgba(255, 255, 255, 0.4);
+  /* Traditional South Indian palette: kumkum maroon, temple gold, sandalwood */
+  --color-primary: #4a0d0c;
+  --color-secondary: #9b1c1c;
+  --color-accent: #c9921a;
+  --color-background: #fbf6ec;
+  --color-text: #47392b;
+  --color-glass: rgba(255, 250, 240, 0.75);
+  --color-glass-border: rgba(201, 146, 26, 0.35);
+
+  --font-sans: 'Mukta Malar', 'Noto Sans Tamil', system-ui, sans-serif;
+  --font-serif: 'Playfair Display', 'Noto Serif Tamil', Georgia, serif;
+
+  /* Remap cool tones → kumkum maroon */
+  --color-blue-50: #fdf3f1;
+  --color-blue-100: #fbe4df;
+  --color-blue-200: #f5c4ba;
+  --color-blue-300: #eb9a8a;
+  --color-blue-400: #d9654f;
+  --color-blue-500: #b8392a;
+  --color-blue-600: #9b1c1c;
+  --color-blue-700: #7f1414;
+  --color-blue-800: #64100f;
+  --color-blue-900: #4a0d0c;
+  --color-blue-950: #2e0706;
+  --color-indigo-50: #fbf1f1;
+  --color-indigo-100: #f5dcdc;
+  --color-indigo-500: #a32a2a;
+  --color-indigo-600: #861b1b;
+  --color-indigo-700: #6b1212;
+  --color-indigo-900: #3d0909;
+  --color-purple-50: #fbf1f1;
+  --color-purple-600: #861b1b;
+
+  /* Remap neutrals → warm sandalwood */
+  --color-gray-50: #fbf7ef;
+  --color-gray-100: #f4ecdd;
+  --color-gray-200: #e8dcc4;
+  --color-gray-300: #d4c3a3;
+  --color-gray-400: #a99677;
+  --color-gray-500: #7d6c55;
+  --color-gray-600: #5e4f3d;
+  --color-gray-700: #47392b;
+  --color-gray-800: #33281e;
+  --color-gray-900: #24190f;
+  --color-gray-950: #170f08;
+  --color-slate-700: #4a2a1c;
+  --color-slate-800: #3a1a12;
+  --color-slate-900: #2a0f0b;
+
+  /* Remap amber → temple gold */
+  --color-amber-50: #fdf8e8;
+  --color-amber-100: #faefc5;
+  --color-amber-200: #f4dc8a;
+  --color-amber-300: #ecc552;
+  --color-amber-400: #e0ab2b;
+  --color-amber-500: #c9921a;
+  --color-amber-600: #a87514;
+  --color-amber-700: #855a12;
+  --color-amber-800: #634310;
+  --color-amber-900: #47300c;
 }
 
 @layer base {
@@ -23,11 +76,17 @@
   }
 
   body {
-    font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-family: var(--font-sans);
     background-color: var(--color-background);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='%23c9921a' fill-opacity='0.09'%3E%3Ccircle cx='24' cy='24' r='2'/%3E%3Ccircle cx='0' cy='0' r='2'/%3E%3Ccircle cx='48' cy='0' r='2'/%3E%3Ccircle cx='0' cy='48' r='2'/%3E%3Ccircle cx='48' cy='48' r='2'/%3E%3C/g%3E%3Cpath d='M24 14 L34 24 L24 34 L14 24 Z' fill='none' stroke='%23c9921a' stroke-opacity='0.08'/%3E%3C/svg%3E");
     color: var(--color-text);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-serif);
+    letter-spacing: 0.01em;
   }
 }
 
@@ -40,31 +99,31 @@
   }
 
   .gradient-primary {
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 60%, #1e40af 100%);
+    background: linear-gradient(135deg, #2e0706 0%, #4a0d0c 60%, #7f1414 100%);
   }
 
   .gradient-accent {
-    background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+    background: linear-gradient(135deg, #e0ab2b 0%, #a87514 100%);
   }
 
   .gradient-hero {
-    background: linear-gradient(135deg, #020617 0%, #0f172a 40%, #1e293b 75%, #1e3a8a 100%);
+    background: linear-gradient(135deg, #1f0504 0%, #4a0d0c 45%, #7f1414 100%);
   }
 
   .text-gradient {
-    background: linear-gradient(135deg, #3b82f6, #f59e0b);
+    background: linear-gradient(135deg, #f4dc8a, #c9921a 55%, #f4dc8a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-secondary px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-blue-500/20 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-blue-500/30 active:translate-y-0;
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-secondary px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-red-900/20 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-red-900/30 active:translate-y-0;
   }
 
   .btn-accent {
     @apply inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-amber-500/20 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-amber-500/30 active:translate-y-0;
-    background: linear-gradient(135deg, #d97706, #b45309);
+    background: linear-gradient(135deg, #e0ab2b, #a87514);
   }
 
   .btn-outline {
@@ -76,12 +135,47 @@
     background: linear-gradient(135deg, #25d366, #128c7e);
   }
 
+  /* Temple-style ornamental band (gopuram triangles in gold on maroon) */
+  .temple-band {
+    height: 14px;
+    background-color: #4a0d0c;
+    background-image:
+      linear-gradient(135deg, #c9921a 25%, transparent 25%),
+      linear-gradient(225deg, #c9921a 25%, transparent 25%);
+    background-size: 14px 14px;
+    background-position: 0 0;
+    border-top: 2px solid #e0ab2b;
+    border-bottom: 2px solid #e0ab2b;
+  }
+
+  /* Thin gold double rule */
+  .gold-rule {
+    height: 6px;
+    border-top: 1px solid #c9921a;
+    border-bottom: 1px solid #c9921a;
+  }
+
+  /* Faint kolam dot pattern for dark sections */
+  .kolam-dark {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='none' stroke='%23e0ab2b' stroke-opacity='0.12'%3E%3Cpath d='M30 8 L52 30 L30 52 L8 30 Z'/%3E%3Ccircle cx='30' cy='30' r='8'/%3E%3C/g%3E%3Cg fill='%23e0ab2b' fill-opacity='0.18'%3E%3Ccircle cx='30' cy='30' r='1.6'/%3E%3Ccircle cx='0' cy='0' r='1.6'/%3E%3Ccircle cx='60' cy='0' r='1.6'/%3E%3Ccircle cx='0' cy='60' r='1.6'/%3E%3Ccircle cx='60' cy='60' r='1.6'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  /* Maroon gradient with kolam pattern on top */
+  .maroon-kolam {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='none' stroke='%23e0ab2b' stroke-opacity='0.12'%3E%3Cpath d='M30 8 L52 30 L30 52 L8 30 Z'/%3E%3Ccircle cx='30' cy='30' r='8'/%3E%3C/g%3E%3Cg fill='%23e0ab2b' fill-opacity='0.18'%3E%3Ccircle cx='30' cy='30' r='1.6'/%3E%3Ccircle cx='0' cy='0' r='1.6'/%3E%3Ccircle cx='60' cy='0' r='1.6'/%3E%3Ccircle cx='0' cy='60' r='1.6'/%3E%3Ccircle cx='60' cy='60' r='1.6'/%3E%3C/g%3E%3C/svg%3E"), linear-gradient(135deg, #2e0706 0%, #4a0d0c 55%, #7f1414 100%);
+  }
+
+  /* Temple arch frame */
+  .temple-arch {
+    border-radius: 50% 50% 1rem 1rem / 28% 28% 1rem 1rem;
+  }
+
   .section-padding {
     @apply px-4 py-16 md:px-8 lg:px-16 lg:py-24;
   }
 
   .section-heading {
-    @apply text-3xl font-bold tracking-tight text-primary md:text-4xl lg:text-5xl;
+    @apply font-serif text-3xl font-bold text-primary md:text-4xl lg:text-5xl;
   }
 
   .section-subheading {

@@ -7,18 +7,18 @@ export const BUSINESS_CONFIG = {
   email: '', // Add email if available
 
   address: {
-    line1: '50, West Vadampokki Street',
-    landmark1: 'Near Koodal Azhagar Temple',
-    landmark2: 'Near Periyar Bus Stand',
-    area: 'Periyar, Madurai Main',
+    line1: '80 Perumal Nandavam, Tirupparankunram Rd',
+    landmark1: 'On Tirupparankunram Road',
+    landmark2: 'Agrini Township',
+    area: 'Agrini Twp',
     city: 'Madurai',
     state: 'Tamil Nadu',
-    pincode: '625001',
-    full: '50, West Vadampokki Street, Near Koodal Azhagar Temple, Near Periyar Bus Stand, Periyar, Madurai Main, Madurai, Tamil Nadu – 625001',
+    pincode: '625011',
+    full: '80 Perumal Nandavam, Tirupparankunram Rd, Agrini Twp, Madurai, Tamil Nadu 625011',
   },
 
-  googleMapsUrl: 'https://maps.google.com/?q=Zayan+Bag+Madurai', // Replace with actual Google Maps URL
-  googleMapsEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3933.0!2d78.12!3d9.92!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwNTUnMTIuMCJOIDc4wrAwNycxMi4wIkU!5e0!3m2!1sen!2sin!4v1234567890', // Replace with actual embed URL
+  googleMapsUrl: 'https://maps.google.com/?q=80+Perumal+Nandavam,+Tirupparankunram+Rd,+Agrini+Twp,+Madurai,+Tamil+Nadu+625011', // Replace with actual Google Maps URL
+  googleMapsEmbedUrl: 'https://maps.google.com/maps?q=80+Perumal+Nandavam,+Tirupparankunram+Rd,+Agrini+Twp,+Madurai,+Tamil+Nadu+625011&output=embed',
 
   businessHours: {
     weekdays: '9:00 AM – 10:00 PM', // Replace with actual hours
@@ -39,7 +39,7 @@ export const BUSINESS_CONFIG = {
 
   seo: {
     title: 'Zayan Bag | Bags, Trolley Bags & Suitcase Repair in Madurai',
-    description: 'Shop quality bags, trolley bags and suitcases and get professional suitcase repair services near Periyar Bus Stand in Madurai.',
+    description: 'Shop quality bags, trolley bags and suitcases and get professional suitcase repair services on Tirupparankunram Road, Madurai.',
     canonicalUrl: 'https://your-domain.com', // Replace with actual domain
     ogImage: '/og-image.jpg', // Replace with actual OG image
   },
